@@ -1,0 +1,45 @@
+.nav {
+    text-align: center;
+    color: white;
+    // border-bottom: solid 1px white;
+    background-color: rgb(46, 46, 59);
+
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 20px 0;
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(255, 255, 255, 0.5);
+        }
+
+        &.active {
+            color: rgb(255, 255, 255, 0.5);
+        }
+
+        &.contact {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            text-decoration: none;
+            border: solid 1px white;
+            color: white;
+            padding: 10px 40px;
+
+            &:hover {
+                background-color: white;
+                color: black;
+
+            }
+        }
+    }
+}
