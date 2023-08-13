@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Website = ({url, title}) => {
+const Website = ({url, title, id}) => {
     return (
-        <section className='projects__content__section projects__content__section__website'>
+        <section id={id} className='projects__content__section projects__content__section__website'>
             <iframe src={url} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title={title} loading='lazy'
             ></iframe>
         </section>
