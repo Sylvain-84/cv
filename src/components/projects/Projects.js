@@ -2,8 +2,14 @@ import React, { useState } from 'react'
 import './projects.scss'
 
 import Website from '../website/Website';
+import StackItem from '../stackItem/StackItem';
 
 import dashboard from '../../assets/img/dashboard.png'
+import powade from '../../assets/img/powade.png'
+import backpower from '../../assets/img/backpower.png'
+import velobatterie from '../../assets/img/velobatterie.png'
+import provelobatterie from '../../assets/img/provelobatterie.png'
+import placeholder from '../../assets/img/placeholder.jpg'
 
 const Projects = () => {
   return (
@@ -18,14 +24,14 @@ const Projects = () => {
       <div className='projects__summary'>
         <div className='projects__summary__project'>
           <div className='projects__summary__project__snapshot'>
-            <img src={dashboard} alt='placeholder' />
+            <img src={placeholder} alt='placeholder' />
           </div>
           <div className='projects__summary__project__title'>Gestion de stock</div>
           <div className='projects__summary__project__stack'>
-            <span className='projects__summary__project__item'>React JS</span>
-            <span className='projects__summary__project__item'>Symfony</span>
-            <span className='projects__summary__project__item'>Api Platform</span>
-            <span className='projects__summary__project__item'>Github</span>
+            <StackItem title='React JS' />
+            <StackItem title='Symfony' />
+            <StackItem title='Api Platform' />
+            <StackItem title='Github' />
           </div>
         </div>
 
@@ -35,61 +41,103 @@ const Projects = () => {
           </div>
           <div className='projects__summary__project__title'>Tableau de bord</div>
           <div className='projects__summary__project__stack'>
-            <span className='projects__summary__project__item'>React JS</span>
-            <span className='projects__summary__project__item'>Symfony</span>
-            <span className='projects__summary__project__item'>Api Platform</span>
-            <span className='projects__summary__project__item'>Github</span>
+            <StackItem title='React JS' />
+            <StackItem title='Symfony' />
+            <StackItem title='Api Platform' />
+            <StackItem title='Github' />
           </div>
         </div>
 
         <div className='projects__summary__project'>
           <div className='projects__summary__project__snapshot'>
-            <img src={dashboard} alt='placeholder' />
+            <img src={placeholder} alt='placeholder' />
           </div>
-          <div className='projects__summary__project__title'>Drive</div>
+          <div className='projects__summary__project__title'>Application interne</div>
           <div className='projects__summary__project__stack'>
-            <span className='projects__summary__project__item'>React JS</span>
-            <span className='projects__summary__project__item'>Symfony</span>
-            <span className='projects__summary__project__item'>Api Platform</span>
-            <span className='projects__summary__project__item'>Github</span>
+            <StackItem title='Symfony' />
+            <StackItem title='Api Platform' />
+            <StackItem title='React JS' />
+            <StackItem title='Symfony UX' />
+            <StackItem title='Github' />
           </div>
         </div>
+
         <div className='projects__summary__project'>
           <div className='projects__summary__project__snapshot'>
-            <img src={dashboard} alt='placeholder' />
+            <img src={placeholder} alt='placeholder' />
           </div>
           <div className='projects__summary__project__title'>Drive</div>
           <div className='projects__summary__project__stack'>
-            <span className='projects__summary__project__item'>React JS</span>
-            <span className='projects__summary__project__item'>Symfony</span>
-            <span className='projects__summary__project__item'>Api Platform</span>
-            <span className='projects__summary__project__item'>Github</span>
+            <StackItem title='React JS' />
+            <StackItem title='Symfony' />
+            <StackItem title='Api Platform' />
+            <StackItem title='Github' />
           </div>
         </div>
+
         <div className='projects__summary__project'>
           <div className='projects__summary__project__snapshot'>
-            <img src={dashboard} alt='placeholder' />
+            <img src={provelobatterie} alt='placeholder' />
           </div>
-          <div className='projects__summary__project__title'>Drive</div>
+          <div className='projects__summary__project__title'>Application clients professionnel</div>
           <div className='projects__summary__project__stack'>
-            <span className='projects__summary__project__item'>React JS</span>
-            <span className='projects__summary__project__item'>Symfony</span>
-            <span className='projects__summary__project__item'>Api Platform</span>
-            <span className='projects__summary__project__item'>Github</span>
+            <StackItem title='Prestashop 1.7' />
+            <StackItem title='PHP' />
+            <StackItem title='JavaScript' />
+            <StackItem title='Github' />
           </div>
         </div>
+
         <div className='projects__summary__project'>
           <div className='projects__summary__project__snapshot'>
-            <img src={dashboard} alt='placeholder' />
+            <img src={powade} alt='placeholder' />
           </div>
-          <div className='projects__summary__project__title'>Drive</div>
+          <div className='projects__summary__project__title'>Powade</div>
           <div className='projects__summary__project__stack'>
-            <span className='projects__summary__project__item'>React JS</span>
-            <span className='projects__summary__project__item'>Symfony</span>
-            <span className='projects__summary__project__item'>Api Platform</span>
-            <span className='projects__summary__project__item'>Github</span>
+            <StackItem title='Prestashop 1.7' />
+            <StackItem title='PHP' />
+            <StackItem title='JavaScript' />
+            <StackItem title='Github' />
           </div>
         </div>
+
+        <div className='projects__summary__project'>
+          <div className='projects__summary__project__snapshot'>
+            <img src={backpower} alt='placeholder' />
+          </div>
+          <div className='projects__summary__project__title'>Backpower</div>
+          <div className='projects__summary__project__stack'>
+            <StackItem title='Prestashop 1.7' />
+            <StackItem title='PHP' />
+            <StackItem title='JavaScript' />
+            <StackItem title='Github' />
+          </div>
+        </div>
+
+        <div className='projects__summary__project'>
+          <div className='projects__summary__project__snapshot'>
+            <img src={velobatterie} alt='placeholder' />
+          </div>
+          <div className='projects__summary__project__title'>Velobatterie</div>
+          <div className='projects__summary__project__stack'>
+            <StackItem title='Prestashop 1.7' />
+            <StackItem title='Prestashop 1.6' />
+            <StackItem title='PHP' />
+            <StackItem title='JavaScript' />
+          </div>
+        </div>
+
+        <div className='projects__summary__project'>
+          <div className='projects__summary__project__snapshot'>
+            <img src={placeholder} alt='placeholder' />
+          </div>
+          <div className='projects__summary__project__title'>Batteries Prod</div>
+          <div className='projects__summary__project__stack'>
+            <StackItem title='Wordpress' />
+          </div>
+        </div>
+
+
       </div>
       {/* <h2>PROJETS</h2> */}
       <div className='projects__content'>
